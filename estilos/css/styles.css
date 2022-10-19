@@ -1,0 +1,367 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/*INDEX/
+/*Body*/
+.body{
+    font-family: 'Open Sans', sans-serif;
+font-family: 'Roboto', sans-serif;
+}
+/*Header*/
+.header{
+    background-color: rgba(0, 0, 0, 0.3);
+    margin: 1rem;
+}
+
+/*Menu*/
+.menu-navegacion{
+    padding:0;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 992px;
+    margin: 0 auto;
+    align-items: center;
+    height: 100px;
+}
+.contenedor{
+    display: flex;
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+    overflow: hidden;
+    padding: 60px 0;
+}
+.logo{
+    height: 100px;
+}
+.logo-img {
+    display: block;
+    height: 100%;
+}
+.enlaces{
+    display: flex;
+    
+}
+.enlaces li{
+    display: flex;
+    margin: 0 10px;
+    line-height: 100px;
+    text-transform: uppercase;
+    width: max-content;
+    list-style: none;
+    display: inline-block;
+}
+.enlaces a{
+    font-size: 1rem;
+    text-decoration: none;
+    color: white;
+    padding: 0.5rem 0.75rem;
+    border-radius:0.2rem ;
+}
+ .enlaces a:hover{
+    background-color: rgb(116, 109, 109);
+    transition: 0.5s;
+ }
+ 
+
+/*Hero*/
+.hero{
+    height: 30rem;
+    background-image: url(../css/img_css/frey0.webp);
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    text-align: center;
+    padding: 8rem;
+}
+.contenedor-textos{
+    padding: 0;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.3);
+    border-radius: 1rem;
+}
+.hero h1{
+    font-size: 4rem;
+    font-weight: 700;
+    margin-bottom: 1.3rem;
+
+}
+.hero p{
+   font-size: 1.4rem; 
+   font-weight: 400;
+   margin-bottom: 1.3rem;
+}
+
+/*Main*/
+.contenedor-main{
+    flex-direction: column;
+}
+.titulo-seccion{
+    
+    text-align: center;
+    font-size: 2.5rem;
+    color: grey;
+    padding-bottom: 1.5rem;
+}
+.copy{
+    text-align: center;
+    color:grey ;
+    padding: 0 15rem;
+}
+.iconos{
+    padding-top: 4rem;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+.icono{
+    font-size: 1.5rem;
+    width: 10rem;
+    height: 10rem;
+    text-align: center;
+    color: grey;
+    background-size: cover;
+    background-position: center;
+    }
+.proyects{
+    background:#f2f2f2 ;
+    padding-top: 4rem;
+}
+.contenedor-imagenes{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+.contenedor-imagenes img{
+    display: block;
+    width: 30%;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.3);
+    margin-bottom: 2rem;
+}
+
+/*Footer*/
+ .footer{
+    text-align: center;
+    padding: 1rem;
+    margin: 1px;
+    background-color: rgba(0, 0, 0, 0.3);
+    margin: 1px;
+ }
+/*FIN INDEX*/
+
+/*DESTINOS*/
+.hero-destinos{
+    height: 30rem;
+    background-image: url(../css/img_css/Los_gigantes.jpg);
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    text-align: center;
+    padding: 8rem;
+}
+
+
+/*GALERIA DE FOTOS*/
+.body-galeria{
+    background-color:rgb(155, 133, 109);
+    font-family: sans-serif;
+    font-size: 1rem;
+}
+.menu-navegacion-galeria{
+    padding:0;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 992px;
+    margin: 0 auto;
+    align-items: center;
+    height: 100px;
+}
+.logo-galeria{
+    height: 100px;
+}
+.logo-img-galeria {
+    display: block;
+    height: 100%;
+}
+.enlaces-galeria{
+    display: flex;
+}
+.enlaces-galeria li{
+    display: flex;
+    margin: 0 10px;
+    line-height: 100px;
+    text-transform: uppercase;
+    width: max-content;
+    list-style: none;
+    display: inline-block;
+}
+.enlaces-galeria a{
+    font-size: 1rem;
+    text-decoration: none;
+    color: white;
+    padding: 0.5rem 0.75rem;
+    border-radius:0.2rem ;
+}
+
+.grid-item{
+    display: grid;
+    align-items: center;
+    justify-content: center;
+
+    background-color: bisque;
+    border-radius: 4px;
+    transition: transform 0.3s ease-in-out;
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.grid-item:hover{
+    filter: opacity(0.9);
+    transform: scale(1.04);
+}
+
+.grid-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)) ;
+    grid-auto-rows: minmax(200px, auto);
+    gap: 20px;
+    padding: 20px;
+    grid-auto-flow: dense;
+}
+@media (min-width: 600px){
+.wide{
+    grid-column: span 2;
+}
+.tall{
+    grid-row: span 2;
+}
+}
+/*FIN GALERIA DE FOTOS*/
+
+
+
+
+/*CONTACTO*/
+.body-contacto{
+    background-image:url(../css/img_css/fondo-contacto.jpg) ;
+    background-size: 100vw 100vh;
+    background-attachment: fixed;
+}
+.form{
+    width: 450px;
+    margin: auto;
+    background: rgba(0, 0, 0, 0.4);
+    padding: 10px 20px;
+    box-sizing: border-box;
+    margin-top: 20px;
+    border-radius: 7px;
+}
+.contacto{
+    color: antiquewhite;
+    text-align: center;
+    margin: 0;
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+.consulta{
+    padding-top: 2rem;
+}
+label{
+    color: antiquewhite;
+    font-size: 1.4rem;
+}
+input, textarea{
+    width: 100%;
+    margin-bottom: 20px;
+    padding: 7px;
+    box-sizing: border-box;
+    font-size: 17px;
+}
+textarea{
+    min-height: 100px;
+    max-height: 200px;
+    max-width: 100%;
+}
+.boton{
+    background-color: bisque;
+}
+.boton:hover{
+    cursor: pointer;
+}
+/*FIN CONTACTO*/
+
+
+
+
+ /*MEDIA QUERIES*/
+
+/*HASTA 768*/  
+@media (max-width:768px){
+     .menu-navegacion-galeria{
+        flex-direction: none;
+        height: auto;
+     }
+      .contenedor-galeria{
+        display: block
+        ;
+     }
+     .logo-galeria{
+        display: flex;
+        height: 100px;
+        justify-content: center;
+     }
+     /*CONTACTO*/
+     .menu-navegacion{
+        flex-direction: none;
+        height: auto;
+        padding: 0 0 1rem;
+     }
+     .contenedor{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+     }
+     .logo{
+        display: flex;
+        height: 100px;
+        justify-content: center;
+     }
+}
+
+ /*HASTA 320PX*/
+ @media (max-width:320px){
+    .enlaces-galeria{
+       flex-direction: column;
+ }
+    .enlaces-galeria li{
+       line-height: 30px;
+       margin: auto;
+ }
+ /*CONTACTO*/
+     .form{
+        width: auto;
+     
+ }
+    .enlaces{
+        flex-direction: column;
+    }
+    .enlaces li{
+        line-height: 30px;
+        margin: auto;
+    }
+ 
+  }
+
+
+ 
